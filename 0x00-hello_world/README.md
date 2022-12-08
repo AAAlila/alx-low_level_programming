@@ -1,1 +1,1 @@
-C – Hello, World
+C hello world
