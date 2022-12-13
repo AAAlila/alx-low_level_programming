@@ -4,10 +4,12 @@
  *
  * Return: Always 0
  */
+
 int main(void)
 {
 	char c;
 	int d;
+	
 	
 	c = 'a';
 	d = 0;
