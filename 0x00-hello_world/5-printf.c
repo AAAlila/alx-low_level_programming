@@ -5,6 +5,9 @@
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n")
-	return (0);
+	printf("   _   _       _   _   _   _   _   _ \n"
+			"  / \\ / \\     / \\ / \\ / \\ / \\ / \\ / \\\n"
+			" ( A | r | t ) ( i | s ) ( a ) ( s | t | a | t | e | m | e | n | t )\n"
+			"  \\_/ \\_/     \\_/ \\_/ \\_/ \\_/ \\_/ \\_/ \n");
+	return 0;
 }
