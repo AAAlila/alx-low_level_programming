@@ -1,18 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - Entry Point
- * Description: prints single number 
- * Return :Always 0
+ * main - prints all possible combinations of single-digit numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a;
-	
-	if (a = 0; a < 10; a++)
+	int n;
+
+	for (n = 48; n < 58; n++)
 	{
-		putchar(a + '0');
-		if (a < 9)
+		putchar(n);
+		if (n != 57)
 		{
 			putchar(',');
 			putchar(' ');
