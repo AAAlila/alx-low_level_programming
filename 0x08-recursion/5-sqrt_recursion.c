@@ -1,28 +1,29 @@
 #include "main.h"
-
 /**
- * _sqrt_recursion - main funct
- * @n: int n
- * Return: int
+ * sqrt_a - Main Entry
+ * @a: input
+ * @b: input
+ * Return: 0
  */
-int _sqrt_recursion(int n)
+int sqrt_a(int a, int b)
 {
-	return (_sqrt(n, 1));
+	if (b * b == a)
+	{
+		return (b);
+	}
+	else if (b * b > a)
+	{
+		return (-1);
+	}
+	return (sqrt_a(a, b + 1));
 }
 
 /**
- * _sqrt - _sqrt_recursion
- * @n: integer parameter
- * @i: integer parameter
- * Return: sqrt
+ * _sqrt_recursion - Main Entry
+ * @n: input
+ * Return: 0
  */
-int _sqrt(int n, int i)
+int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
-	if ((i * i) > n)
-		return (-1);
-	if (i * i == n)
-		return (i);
-	return (_sqrt(n, i + 1));
+	return (sqrt_a(n, 0));
 }
